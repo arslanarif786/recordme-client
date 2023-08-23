@@ -1,0 +1,532 @@
+@font-face {
+    font-family: "inter";
+    src: url("./inter/Inter-Light.ttf")
+}
+
+/* @font-face {
+    font-family: "avenir";
+    src: url("./avenir/Avenir-Medium.ttf")
+} */
+
+/* app general css  */
+
+html,
+body,
+p,
+span,
+input,
+label,
+a,
+button {
+    font-family: 'inter';
+}
+
+#app {
+    font-family: 'inter';
+}
+
+.f-avenir {
+    font-family: 'inter';
+}
+
+.f-inter {
+    font-family: 'inter';
+}
+
+.text-primary {
+    color: var(--v-textPrimary-base);
+}
+
+.heading-text {
+    color: #40415A !important;
+}
+
+.text-secondary {
+    color: var(--v-textSecondary-base);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.remove-underline {
+    text-decoration: none !important;
+}
+
+.header-bg {
+    background-color: #2B2442 !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.custom-dropdown-icon {
+    font-size: 14px;
+    color: var(--v-textPrimary-base);
+}
+
+.text-wrap-normal {
+    white-space: normal !important;
+}
+
+.success-snackbar {
+    background-color: #FBFAFD;
+    color: var(--v-textPrimary-base);
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-none {
+    background-color: none !important;
+}
+
+/* border radius */
+.border-radius-0 {
+    border-radius: 0px !important;
+}
+
+.border-radius-7 {
+    border-radius: 7px !important;
+}
+
+.border-radius-8 {
+    border-radius: 8px !important;
+}
+
+.border-radius-9 {
+    border-radius: 9px !important;
+}
+
+.border-radius-10 {
+    border-radius: 10px !important;
+}
+
+/* fonts size starts here */
+.fs-8 {
+    font-size: 8px !important;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.fs-11 {
+    font-size: 11px !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.fs-13 {
+    font-size: 13px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-17 {
+    font-size: 17px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-19 {
+    font-size: 19px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-21 {
+    font-size: 21px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.fs-23 {
+    font-size: 23px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fs-25 {
+    font-size: 25px !important;
+}
+
+.fs-27 {
+    font-size: 27px !important;
+}
+
+.fs-32 {
+    font-size: 32px !important;
+}
+
+/* fonts size ends here */
+
+/* line height start here */
+.lh-44 {
+    line-height: 44px !important;
+}
+
+.lh-19 {
+    line-height: 19px !important;
+}
+
+.lh-27 {
+    line-height: 27px !important;
+}
+
+/* line height end here */
+
+/* font style start */
+
+.fs-normal {
+    font-style: normal !important;
+}
+
+/* font style end */
+/* font-weight starts here */
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+/* font-weight ends here */
+.ls-0 {
+    letter-spacing: 0 !important;
+}
+
+/* padding starts here */
+.pa-25 {
+    padding: 25px !important;
+}
+
+.pa-30 {
+    padding: 30px !important;
+}
+
+.pb-0 {
+    padding-bottom: 0px !important;
+}
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+/* padding ends here */
+
+.text-captilize {
+    text-transform: capitalize;
+}
+
+.text-inital {
+    text-transform: initial;
+}
+
+/* data listing css generic  start */
+.listing {
+    padding: 0px 32px 0px 32px;
+}
+
+.listing .text-start {
+    max-width: 300px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.listing .text-start .ticket-description {
+    display: inline;
+}
+
+.listing .header {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 16px; */
+}
+
+.listing .header .action {
+    display: flex;
+}
+
+.listing .header .request-filter .v-input__slot {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+.listing .header .create-btn {
+    background-color: rgba(53, 16, 167, 0.05) !important;
+    border-radius: 8px;
+    min-height: 38px;
+    min-width: 145.25px;
+    line-height: 19px;
+    color: #6634E9;
+    text-transform: capitalize;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+.create-btn {
+    width: 145.25px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+}
+
+.listing tbody tr {
+    min-height: 50px;
+    border-radius: 6px;
+}
+
+.listing tbody tr:nth-child(odd) {
+    background: #FBFAFD;
+}
+
+.listing thead span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #40415A;
+}
+
+.listing tbody tr td:nth-child(1) {
+    font-weight: 600;
+    font-size: 13px !important;
+    line-height: 18px;
+    color: #40415A;
+    min-width: 300px;
+}
+
+.listing tbody tr td:nth-child(4) {
+    font-weight: 600;
+    font-size: 13px !important;
+    line-height: 18px;
+    color: #40415A;
+}
+
+.listing .actions {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.listing .actions .v-image {
+    margin-left: 10px;
+}
+
+.listing .actions .v-badge__wrapper .error {
+    inset: auto auto calc(100% - 8px) calc(100% - 12px) !important;
+    background-color: #E13434 !important;
+    border-color: #E13434 !important;
+}
+
+/* data listing css generic  end */
+
+
+/* chips  start */
+
+.v-chip {
+    background: none !important;
+    padding: 0px !important;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* .complete-chip {
+    color: #329C47 !important;
+    background-color: #E4EDE5 !important;
+} */
+
+
+.complete-chip {
+    color: var(--v-chipColorCompleteText-base) !important;
+    background-color: var(--v-chipColorCompleteBackground-base) !important;
+}
+
+.pending-chip {
+    color: var(--v-chipColorPendingText-base) !important;
+    background-color: var(--v-chipColorPendingBackground-base) !important;
+}
+
+.client-responded-chip {
+    color: var(--v-chipColorClientRespondedText-base) !important;
+    background-color: var(--v-chipColorClientRespondedBackground-base) !important;
+}
+
+.review-request-chip {
+    color: var(--v-chipColorReviewRequestText-base) !important;
+    background-color: var(--v-chipColorReviewRequestBackground-base) !important;
+}
+
+.in-progress-chip {
+    color: var(--v-chipColorInProgressText-base) !important;
+    background-color: var(--v-chipColorInProgressBackground-base) !important;
+}
+
+.awaiting-response-chip {
+    color: var(--v-chipColorAwaitingResponseText-base) !important;
+    background-color: var(--v-chipColorAwaitingResponseBackground-base) !important;
+}
+
+.audit-chip {
+    color: var(--v-chipColorAuditText-base) !important;
+    background-color: var(--v-chipColorAuditBackground-base) !important;
+}
+
+.rejected-chip {
+    color: var(--v-chipColorRejectedText-base) !important;
+    background-color: var(--v-chipColorRejectedBackground-base) !important;
+}
+
+
+
+
+/* .pending-chip i {
+    color: #FAAD13 !important;
+} */
+
+/* chips end */
+
+
+/* create ticket start */
+.create-ticket-popup .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #23272C;
+}
+
+
+/* create ticket end */
+
+
+.custom-close-icon {
+    position: relative;
+    bottom: 15px;
+    border: 1px solid #e8ebf4;
+    padding: 0px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #40415a;
+    cursor: pointer;
+}
+
+
+.header .action .v-text-field.v-text-field--solo .v-input__control {
+    max-height: 40px !important;
+    max-width: 210px !important;
+}
+
+.header .action .theme--light.v-label {
+    margin-left: -6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2B2442;
+}
+
+
+
+/* authentication screen back to login link  */
+
+.back-to-login-btn {
+    position: relative !important;
+    top: 3% !important;
+    left: 35% !important;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.left-45 {
+    left: 45px;
+    ;
+}
+
+
+
+/* style of close svg when a dialog or filter open etc */
+.custom-close-icon {
+    position: relative;
+    bottom: 8px;
+    border: 1px solid #e8ebf4;
+    padding: 3px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #40415a;
+    cursor: pointer;
+}
+
+.right-side-bgimage {
+    height: 100vh;
+}
+
+.fixed-height {
+    max-height: 54px;
+    overflow-y: scroll;
+}
+
+.white-color {
+    color: white !important;
+}
+
+
+.postion-absolute {
+    position: absolute !important;
+}
+
+.b-14 {
+    bottom: 14px !important;
+}
